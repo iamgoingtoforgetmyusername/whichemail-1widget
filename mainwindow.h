@@ -3,11 +3,8 @@
 
 #include <QMainWindow>
 #include <QLineEdit>
-#include <string>
-//#include <QEventLoop>
 #include <QRegExp>
 #include <QMessageBox>
-#include <sqlite3.h>
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlDatabase>
@@ -23,10 +20,7 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
- //   QString getAcctNo();
     QString retrieveEmail(QString);
- //   void setEmail(QString);
-    int callback (void*, int, char**, char**);
     ~MainWindow();
 
 private:
@@ -34,9 +28,6 @@ private:
 
 private slots:
     void getAcctNo();
-
-//signals:
-  //  void setEmail(QString);
 
 };
 #endif // MAINWINDOW_H
