@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,6 +16,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//asks user for account name, calls retrieveEmail
 void MainWindow::getAcctNo()
 {
     QString whatWasEntered = ui->lineEdit->text();
@@ -31,6 +31,7 @@ void MainWindow::getAcctNo()
         }
 }
 
+//looks for entered account name in database
 QString MainWindow::retrieveEmail(QString acctinput){
 
     QString retrievedEmail;
@@ -38,7 +39,8 @@ QString MainWindow::retrieveEmail(QString acctinput){
     db.setDatabaseName("passwordsDB.db");
 
     QSqlQuery query(db);
-
+    
+//open database
     if (!db.open()){
         QMessageBox errorMessage;
         errorMessage.setWindowTitle("error");
@@ -50,6 +52,7 @@ QString MainWindow::retrieveEmail(QString acctinput){
         return "can't open DB";
     }
 
+//searches for entered account name and displays in main window
     QString sqlCommand = "SELECT EMAIL from EMAILPW WHERE ACCOUNT = '" + acctinput + "';";
 
     query.prepare(sqlCommand);
