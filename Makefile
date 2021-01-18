@@ -38,7 +38,7 @@ DISTNAME      = whichemail-1widget1.0.0
 DISTDIR = /home/me/Documents/programming/whichemail/whichemail-1widget/build-whichemail-1widget-Desktop-Release/.tmp/whichemail-1widget1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
-LIBS          = $(SUBLIBS) -L/home/me/Documents/programming/whichemail/whichemail-1widget/../../../../../../usr/lib/x86_64-linux-gnu/ -lsqlite3 -lQt5Widgets -lQt5Gui -lQt5Sql -lQt5Core -lGL -lpthread 
+LIBS          = $(SUBLIBS) -L/usr/lib/x86_64-linux-gnu/ -lsqlite3 -lQt5Widgets -lQt5Gui -lQt5Sql -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -132,13 +132,13 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../mainwindow.cpp
 QMAKE_TARGET  = whichemail-1widget
 DESTDIR       = 
-TARGET        = whichemail-1widget
+TARGET        = whichemail
 
 
 first: all
 ####### Build rules
 
-$(TARGET): /home/me/Documents/programming/whichemail/whichemail-1widget/../../../../../../usr/lib/x86_64-linux-gnu/libsqlite3.a ui_mainwindow.h $(OBJECTS)  
+$(TARGET): /usr/lib/x86_64-linux-gnu/libsqlite3.a ui_mainwindow.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: ../whichemail-1widget.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
