@@ -132,7 +132,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../mainwindow.cpp
 QMAKE_TARGET  = whichemail-1widget
 DESTDIR       = 
-TARGET        = whichemail-1widget
+TARGET        = whichemail
 
 
 first: all
