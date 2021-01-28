@@ -1,4 +1,4 @@
-# whichemail-1widget
+# whichemail-static
 
 This program asks for the name of an account and then tells you the email address associated with it. 
 
@@ -19,38 +19,8 @@ The database must be in the same directory as the compiled executable.
 Linux. It was tested on Ubuntu 18.04.
 
 depends on these libraries:
-- linux-vdso.so.1
-- libQt5Widgets.so.5
-- libQt5Gui.so.5
-- libQt5Sql.so.5
-- libQt5Core.so.5
-- libstdc++.so.6
-- libgcc_s.so.1
-- libc.so.6
-- libpthread.so.0
-- libm.so.6
-- libGL.so.1
-- libpng16.so.16
-- libharfbuzz.so.0
-- libz.so.1
-- libicui18n.sp.60
-- libicuuc.so.60
-- libdouble-conversion.so.1
-- libdl.so.2
-- libglib-2.0.so.0
-- ld-linux-x86_64.so.2
-- libGLX.so.0
-- libGLdispatch.so.0
-- libfreetype.so.6
-- libgraphiet2.so.3
-- libcudata.so.60
-- libpcre.so.3
-- libX11.so.6
-- libscb.so.1
-- libXau.so.6
-- libXsmcp.so.6
-
 TODO
+
 
 ## Built With
 
