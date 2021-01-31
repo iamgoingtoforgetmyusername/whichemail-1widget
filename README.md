@@ -10,6 +10,14 @@ in terminal:
 qmake ./whichemail.pro  
 make
 
+If make gives you a similar error to this:
+ui_mainwindow.h: In member function ‘void Ui_MainWindow::setupUi(QMainWindow*)’:  
+ui_mainwindow.h:65:54: error: ‘PlaceholderText’ is not a member of ‘QPalette’  
+         palette.setBrush(QPalette::Active, QPalette::PlaceholderText, brush6);
+
+delete the 3 lines in the ui_mainwindow.h file that have "PlaceholderText" in them, e.g.  
+palette.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush9);
+
 There is also a SQLite database, but it currently only has one entry: "test".   You need to populate the database with accounts you have and the email addresses associated with them (or passwords, or other information associated with them, if you enter them in the database as the email address). The existing columns in the database are: ACCOUNT, EMAIL, PWHASH, and SALT .  The program will only return the EMAIL result, though.  
 The database must be in the same directory as the compiled executable.
 
