@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->tryagainButton->hide();
     ui->email->hide();
     ui->lineEdit->setFocus();
+    connect(ui->OKbutton, SIGNAL(clicked()), this, SLOT(getAcctNo()));
 }
 
 MainWindow::~MainWindow()
