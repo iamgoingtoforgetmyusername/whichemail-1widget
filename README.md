@@ -25,7 +25,7 @@ The database must be in the same directory as the compiled executable.
 
 Linux. It was tested on Ubuntu 18.04 and Xubuntu 20.04.
 
-You need to have the following installed: qmake (qt5-qmake), Qt (qt5-default), make, g++.  
+You need to have the following installed: qmake (qt5-qmake), Qt version 5.12.8 (qt5-default), make, g++.  
 
 also these libraries:
 
