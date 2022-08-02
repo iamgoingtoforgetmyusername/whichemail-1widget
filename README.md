@@ -61,7 +61,6 @@ also these libraries:
 - libbsd.so.0
 - librt.so.1
 
-
 ## Built With
 
 QT Creator. Database with SQLite3.
@@ -78,11 +77,7 @@ It should return the email address associated with that account.
 
 - DB currently isn't relevant for anyone but me  
 - make it work with hashed passwords
-- make a version for macs
-
-## Author
-
-me 
+- make a version that runs in a browser
 
 ## Acknowledgments
 
